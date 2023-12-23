@@ -8,7 +8,6 @@ function getTableRow() {
   let elements = document.getElementsByTagName("td");
   for (let e in elements) {
     if (elements[e].className == "TC") {
-      chrome.extension.sendRequest({}, function (response) {});
       return elements[e];
     }
   }
